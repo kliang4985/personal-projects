@@ -25,6 +25,7 @@ public class TennisRankings {
 			if (ranking == -1) {
 				System.out.println("NOT FOUND");
 			} else {
+				
 				int pointValueStart = pageContent.indexOf("s\">",ranking) + 3;
 				int pointValueEnd = pageContent.indexOf("<",pointValueStart);
 				String points = pageContent.substring(pointValueStart, pointValueEnd);
@@ -39,6 +40,7 @@ public class TennisRankings {
 				System.out.println("Player Name: " + name + "\n" + "Points: " + points +"\n" + "Current Rank: " + currentRank + "\n" 
 				+ "Prev Rank: " + prevRank);
 				break;
+				
 			}
 		}
 	}
